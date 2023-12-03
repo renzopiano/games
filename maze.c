@@ -1,8 +1,6 @@
 int clear()
 {
-	int i;
-	for (i = 0; i < 60; i++)
-		putc('\n');
+	puts("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 	return 0;
 }
 

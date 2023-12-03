@@ -1,7 +1,7 @@
 .ORIG x3000
 BRnzp #2
 .FILL #65023
-.FILL #12574
+.FILL #12537
 LD R0, #-2
 LD R6, #-4
 JSRR R0
@@ -102,61 +102,24 @@ ADD R6, R6, #-1
 STR R5, R6, #0
 ADD R5, R6, #0
 AND R4, R4, #0
-ADD R4, R4, #-1
-ADD R6, R6, R4
-AND R4, R4, #0
 ADD R4, R4, #0
 ADD R6, R6, R4
-AND R0, R0, #0
-ADD R0, R0, #0
-AND R1, R1, #0
-ADD R1, R1, #-1
-ADD R1, R5, R1
-STR R0, R1, #0
-BRnzp #21
-AND R4, R4, #0
-ADD R4, R4, #0
-ADD R6, R6, R4
-AND R0, R0, #0
-ADD R0, R0, #10
+BRnzp #1
+.FILL #13272
+LD R0, #-2
 ADD R6, R6, #-1
 STR R0, R6, #0
 BRnzp #1
-.FILL #12363
+.FILL #12374
 LD R0, #-2
 JSRR R0
 AND R1, R1, #0
 ADD R1, R1, #1
 ADD R6, R6, R1
 AND R0, R0, #0
-ADD R0, R0, #-1
-ADD R0, R5, R0
-LDR R1, R0, #0
-ADD R2, R1, #1
-STR R2, R0, #0
-ADD R0, R1, #0
-AND R0, R0, #0
-ADD R0, R0, #-1
-ADD R0, R5, R0
-LDR R0, R0, #0
-ADD R6, R6, #-1
-STR R0, R6, #0
-BRnzp #1
-.FILL #60
-LD R0, #-2
-LDR R1, R6, #0
-ADD R6, R6, #1
-NOT R1, R1
-ADD R1, R1, #1
-ADD R0, R1, R0
-BRp #1
-AND R0, R0, #0
-AND R0, R0, R0
-BRnp #-39
-AND R0, R0, #0
 ADD R0, R0, #0
 AND R4, R4, #0
-ADD R4, R4, #1
+ADD R4, R4, #0
 ADD R6, R6, R4
 LDR R5, R6, #0
 ADD R6, R6, #1
@@ -264,7 +227,7 @@ AND R1, R1, #0
 ADD R1, R1, #1
 ADD R6, R6, R1
 BRnzp #1
-.FILL #13309
+.FILL #13331
 LD R0, #-2
 ADD R6, R6, #-1
 STR R0, R6, #0
@@ -294,7 +257,7 @@ AND R4, R4, #0
 ADD R4, R4, #-6
 ADD R6, R6, R4
 BRnzp #1
-.FILL #13325
+.FILL #13347
 LD R0, #-2
 AND R1, R1, #0
 ADD R1, R1, #-6
@@ -326,7 +289,7 @@ LDR R0, R0, #0
 ADD R6, R6, #-1
 STR R0, R6, #0
 BRnzp #1
-.FILL #12452
+.FILL #12415
 LD R0, #-2
 JSRR R0
 AND R1, R1, #0
@@ -389,7 +352,7 @@ LDR R0, R0, #0
 ADD R6, R6, #-1
 STR R0, R6, #0
 BRnzp #1
-.FILL #12531
+.FILL #12494
 LD R0, #-2
 JSRR R0
 AND R1, R1, #0
@@ -914,7 +877,7 @@ AND R1, R1, #0
 ADD R1, R1, #1
 ADD R6, R6, R1
 BRnzp #1
-.FILL #13938
+.FILL #13960
 LD R0, #-2
 ADD R6, R6, #-1
 STR R0, R6, #0
@@ -954,7 +917,7 @@ LDR R0, R0, #0
 ADD R6, R6, #-1
 STR R0, R6, #0
 BRnzp #1
-.FILL #12531
+.FILL #12494
 LD R0, #-2
 JSRR R0
 AND R1, R1, #0
@@ -1020,6 +983,7 @@ ADD R6, R6, #1
 LDR R7, R6, #0
 ADD R6, R6, #1
 RET
+.STRINGZ "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 .STRINGZ "Press e to exit"
 .STRINGZ "**************************************************\n*.**...*....**............********....************\n*.**.*...**.**.****.*****..........**..*.....*****\n*....******....****..*****************.*.***.***-*\n*.*****.....**********.........*.*..**.*.***.*.*.*\n*.*****.*******....***.*******.*.**.**.*.***...*.*\n*.*****.*******.**.....***...*.*.**.**...*******.*\n*.*****.****....**********.*.***.**.********.....*\n*.*****......*************.*.....**..*******.*****\n*.*************.....****...*****.***.*******.*****\n*...............***......*******.............*****\n**************************************************\n"
 .STRINGZ "You won !\n"
